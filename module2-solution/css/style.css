@@ -3,44 +3,48 @@
 	margin: 0;
 	padding: 0;
 }
-h1{
+#heading{
+	color: #262322;
 	text-align: center;
 	margin: 30px auto 40px auto;
+	font-family: 'Nanum Pen Script', cursive;
+	font-size: 45px;
+	font-weight: 700;
 }
 .hero{
 	display: flex;
+	padding: 10px;
 	/*flex-wrap:  wrap;*/
 }
 .hero > .box{
 	padding: 13px 10px;
-	border: black solid;
-	margin: 10px 8px;
+	border: 3px black solid;
+	margin: 10px;
 	padding: 30px;
 	position: relative;
-	background-color: #999999;
+	background-color: #b3b4b3;
+	font-family: 'Nanum Pen Script', cursive;
+	font-size: 24px;
 }
 .hero> .box > .inner{
-	/*margin: 3px 0px;*/
-	border: black solid;
-	border-width: 3px;
+	border: 3px black solid;
 	border-top-width: 0;
 	border-right-width: 0;
-	height: 20px;
-	width: 27%;
+	height: 30px;
+	width: 30%;
 	margin-left: auto;
 	margin-right: 0;
 	display: flex;
 	position: absolute;
 	top:  0px;
 	right: 0px;
-	font: 1em sans-serif;
 	font-weight: 600;
 	text-align: center;
 	justify-content: center;
 	
 }
 #in-1{
-	background-color: #d49999;
+	background-color: #fbbbc6;
 }
 #in-2{
 	background-color: #c14543;
@@ -54,34 +58,54 @@ h1{
 /* Phone */
 @media screen and (max-width: 767px){
 	.hero{
-		display: block;
+		display: flex;
+		padding: 10px;
+		flex-direction: column;
+	}
+	.hero > .box{
+		padding: 13px 10px;
+		border: 3px black solid;
+		margin: 10px;
+		padding: 30px;
+		position: relative;
+		background-color: #b3b4b3;
+		font-family: 'Nanum Pen Script', cursive;
+		font-size: 24px;
 	}
 	.hero> .box > .inner{
-		border: black solid;
-		border-width: 3px;
+		border: 3px black solid;
 		border-top-width: 0;
 		border-right-width: 0;
-		height: 20px;
-		width: 27%;
+		height: 30px;
+		width: 30%;
 		margin-left: auto;
 		margin-right: 0;
 		display: flex;
 		position: absolute;
 		top:  0px;
 		right: 0px;
-		font: 1em sans-serif;
 		font-weight: 600;
 		text-align: center;
 		justify-content: center;
 	}
 
 }
-/*Tablets */
+/* Higher but less than desktops */
 @media screen and (min-width: 768px) and (max-width: 991px){
 	.hero{
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: row;
+	}
+	.hero > .box{
+		padding: 13px 10px;
+		border: 3px black solid;
+		margin: 10px;
+		padding: 30px;
+		position: relative;
+		background-color: #b3b4b3;
+		font-family: 'Nanum Pen Script', cursive;
+		font-size: 24px;
 	}
 	#box-1, #box-2{
 		flex: 1 1;
@@ -92,19 +116,17 @@ h1{
 		width: 100%;
 	}
 	.hero> .box > .inner{
-		border: black solid;
-		border-width: 3px;
+		border: 3px black solid;
 		border-top-width: 0;
 		border-right-width: 0;
-		height: 20px;
-		width: 27%;
+		height: 30px;
+		width: 30%;
 		margin-left: auto;
 		margin-right: 0;
 		display: flex;
 		position: absolute;
 		top:  0px;
 		right: 0px;
-		font: 1em sans-serif;
 		font-weight: 600;
 		text-align: center;
 		justify-content: center;
